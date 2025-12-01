@@ -78,66 +78,29 @@ A aplicação se integra perfeitamente com a API RESTful do Smart RH, proporcion
 ## 📁 Estrutura do Projeto
 
 ```
-smart-rh-frontend/
+Smart-Rh-Frontend/
+│
 ├── public/
-│   ├── index.html
-│   └── assets/
-│       └── images/
+│
 ├── src/
+│   ├── assets/
 │   ├── components/
-│   │   ├── departamentos/
-│   │   │   ├── CadastrarDepartamento.jsx
-│   │   │   └── ListaDepartamentos.jsx
-│   │   ├── colaboradores/
-│   │   │   ├── CadastrarColaborador.jsx
-│   │   │   ├── EditarColaborador.jsx
-│   │   │   ├── ListaColaboradores.jsx
-│   │   │   └── CalcularSalario.jsx
-│   │   ├── layout/
-│   │   │   ├── Header.jsx
-│   │   │   ├── Sidebar.jsx
-│   │   │   ├── Footer.jsx
-│   │   │   └── NavBar.jsx
-│   │   └── comum/
-│   │       ├── Button.jsx
-│   │       ├── Input.jsx
-│   │       ├── Modal.jsx
-│   │       └── Loading.jsx
 │   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── Login.jsx
-│   │   ├── Departamentos.jsx
-│   │   └── Colaboradores.jsx
+│   ├── layout/
 │   ├── services/
-│   │   ├── api.js
-│   │   ├── departamentoService.js
-│   │   ├── colaboradorService.js
-│   │   └── authService.js
-│   ├── contexts/
-│   │   └── AuthContext.jsx
 │   ├── hooks/
-│   │   ├── useAuth.js
-│   │   ├── useDepartamentos.js
-│   │   └── useColaboradores.js
 │   ├── utils/
-│   │   ├── calculaSalario.js
-│   │   ├── formatters.js
-│   │   └── validators.js
+│   ├── context/
 │   ├── routes/
-│   │   ├── index.jsx
-│   │   └── PrivateRoute.jsx
 │   ├── styles/
-│   │   ├── global.css
-│   │   └── tailwind.css
-│   ├── App.jsx
-│   └── main.jsx
-├── .env.example
-├── .eslintrc.json
-├── .gitignore
+│   ├── App.tsx
+│   └── main.tsx
+│
 ├── package.json
-├── vite.config.js
-├── tailwind.config.js
+├── tsconfig.json
+├── vite.config.ts
 └── README.md
+
 ```
 
 ---
@@ -372,17 +335,6 @@ O sistema é totalmente responsivo e foi desenvolvido com abordagem **mobile-fir
 
 ---
 
-## 🔒 Segurança
-
-- ✅ Autenticação JWT
-- ✅ Rotas protegidas com `PrivateRoute`
-- ✅ Validação de formulários no client-side
-- ✅ Sanitização de inputs
-- ✅ Tokens armazenados de forma segura
-- ✅ Logout automático em caso de token inválido
-
----
-
 ## 🚢 Deploy
 
 ### Build de Produção
@@ -482,7 +434,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 | Priscila Lins | [@priscila-lins](https://github.com/priscila-lins) |
 | Rayssa Ferraz | [@rayssa-ferraz](https://github.com/rayssa-ferraz) |
 | Sofia de Araújo | [@sofia-araujo](https://github.com/sofia-araujo) |
-| Thuany da Silva | [@thuany-silva](https://github.com/thuany-silva) |
+| Thuany da Silva | [@thuany-silva](https://github.com/ThuanyAline) |
 
 ---
 
