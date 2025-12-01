@@ -1,3 +1,5 @@
+import ModalColaborador from "../../coaborador/modalcolaborador/ModalColaborador"
+
 function Home() {
     return (
         <>
@@ -21,12 +23,11 @@ function Home() {
                                 >
                                     Saiba mais
                                 </button>
-                                <button
-                                    className="px-4 py-2 rounded-3xl lg:rounded-full bg-white/25 hover:bg-white/85 border border-white transition"
-                                    onClick={() => console.log("Botão clicado!")}
+                                <div
+                                    className="flex justify-around gap-4"
                                 >
-                                    Cadastrar Colaborador
-                                </button>
+                                    <ModalColaborador />
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import type Colaborador from '../../models/Colaborador';
-import { BarLoader } from 'react-spinners';
+import { ClipLoader } from 'react-spinners';
 import CardColaborador from '../cardcolaborador/CardColaborador';
 import { listar } from '../../services/Services';
 import { ToastAlerta } from '../../utils/ToastAlerta';
@@ -37,14 +37,16 @@ function ListarColaboradores() {
 			{
 				isLoading && (
 					<div className="flex justify-center w-full my-8">
-						<BarLoader
-							color="#EF7500"
-							
+						<ClipLoader
+						color="#0D9488"
+						size={80}
+						speedMultiplier={2}
+						aria-label="loading"							
 						/>
 					</div>
 				)
 			}
-			<div className="flex justify-center w-full bg-slate-100 min-h-[70vh] overflow-x-hidden">
+			<div className="flex justify-center w-full bg-slate-200 min-h-[70vh] overflow-x-hidden">
 				<div className="box-border w-full px-4 py-4 mt-8 max-w-8xl sm:px-6 md:px-8 lg:px-12 md:py-6">
 
 					{

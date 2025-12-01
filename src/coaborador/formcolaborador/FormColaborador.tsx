@@ -20,17 +20,7 @@ function FormColaborador() {
     descricao: "",
   })
 
-  const [colaborador, setColaborador] = useState<Colaborador>({
-  id: 0, 
-  nome: "",
-  dependentes: 0,
-  cargo: "",
-  salario: 0,
-  horasMensais: 0,
-  email: "",
-  foto: "",
-  departamento: { id: 0, descricao: "" }
-});
+  const [colaborador, setColaborador] = useState<Colaborador>({} as Colaborador);
 
 
   const { id } = useParams<{ id: string }>();
@@ -125,13 +115,14 @@ function FormColaborador() {
     } else {
       try {
         await cadastrar(`/colaboradores`, colaborador, setColaborador);
-       alert("Colaborador foi cadastrado com sucesso!", )
+       alert("Colaborador foi cadastrado com sucesso!")
       } catch {
         alert("Erro ao cadastrar colaborador")
       }
     }
     setIsLoading(false);
     retornar();
+
   }
 
 
@@ -173,7 +164,7 @@ function FormColaborador() {
               Dependentes
             </label>
             <input
-              type="text"
+              type="number"
               placeholder="Dependentes"
               name="dependentes"
               id="dependentes"

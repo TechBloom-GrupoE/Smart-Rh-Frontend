@@ -74,14 +74,14 @@ function DeletarColaborador() {
 
         <div className="flex">
           <button
-            className="text-slate-100 bg-red-600 hover:bg-red-400 w-full py-2"
+            className="text-slate-100 w-full py-2 bg-red-200 hover:bg-red-500 md:text-lg "
             onClick={retornar}
           >
             Não
           </button>
 
           <button
-            className="text-slate-100 bg-amber-500 hover:bg-amber-400 w-full py-2 justify-center"
+            className="flex items-center justify-center w-full text-base bg-green-200 text-white hover:bg-green-400 md:text-lg"
             onClick={deletarColaborador}
           >
             {isLoading ? (
