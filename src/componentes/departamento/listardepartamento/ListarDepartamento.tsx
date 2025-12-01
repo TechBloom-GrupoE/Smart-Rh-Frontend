@@ -32,7 +32,7 @@ function ListarDepartamento() {
 				</div>
 			)}
 
-			<div className="flex justify-center w-full bg-slate-200 min-h-[70vh] overflow-x-hidden">
+			<div className="flex justify-center w-full min-h-[calc(100vh-8rem)] overflow-x-hidden bg-gray-200 not-even:">
 				<div className="box-border w-full px-4 py-4 mt-8 mb-4 max-w-8xl sm:px-6 md:px-8 lg:px-12 md:py-6">
 					{!isLoading && departamentos.length === 0 && (
 						<div className="my-8 text-2xl text-center md:text-3xl text-slate-700 md:my-16">
@@ -40,12 +40,12 @@ function ListarDepartamento() {
 						</div>
 					)}
 
-          <div className="container flex flex-col items-center justify-center px-2 mx-auto bg-gray-200 ">
-            <h1 className="my-8 text-lg text-center md:text-4xl font-bold  uppercase py-6 text-orange-400 gap-4">
+          <div className="flex flex-col items-center justify-center bg-gray-200 ">
+            <h1 className="my-4 text-xl text-center md:text-4xl font-bold py-6 text-orange-500 gap-4">
                 Departamentos
             </h1>
   
-					<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-6 mb-4 md:mb-0">
+					<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-12 mb-4 md:mb-0">
 						{departamentos.map((departamento) => (
 							<CardDepartamento key={departamento.id} departamento={departamento}/>
 						))}

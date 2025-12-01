@@ -48,7 +48,7 @@ function Deletardepartamento() {
         navigate("/departamentos")
     }
 	return (
-		<div className='container w-full max-w-md px-4 pt-4 mx-auto md:pt-6'>
+		<div className='w-full max-w-md m-16 pt-4 pb-4 mx-auto sm:pt-6 sm:pb-6'>
             <h1 className='py-4 text-3xl text-center md:text-4xl font-bold uppercase text-orange-400'>Deletar departamento</h1>
             <p className='mb-4 text-base font-semibold text-center md:text-lg'>
                 Você tem certeza de que deseja apagar a departamento a seguir?</p>

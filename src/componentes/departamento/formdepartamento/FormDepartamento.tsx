@@ -68,12 +68,12 @@ function Formdepartamento() {
 
   }
 
-  function retornar() {
+function retornar() {
     navigate("/departamentos")
   }
 
    return (
-    <div className="container flex flex-col items-center justify-center px-2 mx-auto bg-gray-200">
+    <div className="flex flex-col items-center justify-center py-12 sm:py-20 mx-auto bg-gray-200">
       <h1 className="my-8 text-lg text-center md:text-4xl font-bold  uppercase py-6 text-orange-400 gap-4">
         {id === undefined ? 'Cadastrar Departamento' : 'Editar Departamento'}
       </h1>

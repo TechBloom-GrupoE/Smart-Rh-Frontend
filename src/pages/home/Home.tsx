@@ -21,9 +21,10 @@ function Home() {
                                     className="px-4 py-2 rounded-3xl lg:rounded-full bg-white/25 hover:bg-white/85 border border-white transition"
                                     onClick={() => console.log("Botão clicado!")}
                                 >
-                                    Saiba mais
+                                    <a href="#secao-sobre">Saiba mais</a>
+                                    
                                 </button>
-                                <div
+                               <div
                                     className="flex justify-around gap-4"
                                 >
                                     <ModalColaborador />
@@ -31,7 +32,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-center bg-[#F08E30]">
+                    <div className="hidden md:flex justify-center bg-[#F08E30]">
                         <img
                             src="https://ik.imagekit.io/techbloom/Smart_RH/Imagem%20Normal.png"
                             alt="Imagem Página Home"
@@ -59,7 +60,7 @@ function Home() {
             </div>
 
             {/* Terceira parte da Home - Motivos */}
-            <div className="bg-gray-200 py-25 px-4 sm:px-6 lg:px-8 mb-15">
+            <div id="secao-sobre" className="bg-gray-200 py-25 px-4 sm:px-6 lg:px-8 mb-15">
                 <div className="mx-auto flex text-center justify-center">
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 pb-25">
                         Por que escolher a <span className="text-orange-500">SmartRH</span>?
