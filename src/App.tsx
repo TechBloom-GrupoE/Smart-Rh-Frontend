@@ -11,20 +11,13 @@ function App() {
 	return (
 		<>
 			<BrowserRouter>
-                <Navbar />
-                <div>
-                <Routes>
-                <Route path="/" element={<Home />}/>
-                <Route path="/departamentos" element={<ListarDepartamento />}/>
-				        <Route path="/caddepartamento" element={<FormDepartamento />} />
-              	<Route path="/editardepartamento/:id" element={<FormDepartamento />} />
-              	<Route path="/deletardepartamento/:id" element={<DeletarDepartamento />} />
-                </Routes>
-                </div>
-                <Footer />
-            </BrowserRouter>
+				<Navbar />
+				<Home />
+				<Footer />
+			</BrowserRouter>
 		</>
 	)
 }
 
 export default App
+
