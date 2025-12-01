@@ -1,8 +1,7 @@
-
-function Navbar() {
 import { SignOutIcon, UserCircleIcon } from "@phosphor-icons/react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+
 
 
 type MenuState = 'closed' | 'open';
@@ -26,9 +25,6 @@ function Navbar({ menuState, onMenuToggle, onMenuClose }: Readonly<NavbarProps>)
   const handleMenuClose = (): void => {
     onMenuClose();
   };
-
-
-
 
 
   return (
