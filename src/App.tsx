@@ -1,7 +1,7 @@
-import { BrowserRouter } from "react-router-dom"
-import Footer from "./componentes/footer/Footer"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Navbar from "./componentes/navbar/Navbar"
 import Home from "./pages/home/Home"
+import Footer from "./componentes/footer/Footer"
 
 function App() {
 	return (
@@ -20,15 +20,9 @@ function App() {
 					<Route path="/deletarcolaborador/:id" element={<DeletarColaborador />} /> */}
 				</Routes>
 			</div>
+			< Footer />
 		</BrowserRouter>
 
-		// <>
-
-		// <Navbar />
-		// <Home />
-
-
-		// </>
 	)
 }
 
