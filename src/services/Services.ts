@@ -4,8 +4,8 @@ export const api = axios.create({
     baseURL: "https://smart-rh-backend.onrender.com"
   })
  
-
   // ==================== CRUD ====================
+
 
   export const listar = async(url: string, setDados: Function) => {
     const resposta = await api.get(url)
@@ -24,6 +24,7 @@ export const api = axios.create({
  
   export const deletar = async(url: string) => {
     await api.delete(url)
+
   }
 
  // ==================== CÁLCULO DE SALÁRIO ====================
@@ -32,3 +33,5 @@ export const calcularSalario = async (url: string, dadosSalario: any) => {
   const response = await api.post(url, dadosSalario)
   return response.data
 }
+
+
